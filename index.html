@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/496912dcbc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <a href="https://www.aluracursos.com" target="_blank" class="logo">
+            <img src="./resources/images/logo.svg" alt="Logo de Alura Latam">
+        </a>
+    </header>
+    <main>
+        <section class="principal-container">
+            <div class="txt-container">
+                <textarea id="txt-entrada" placeholder="Inserte el texto aqui" class="txt-entrada"></textarea>
+            </div>
+            <div class="botones-container">
+                <div class="botones">
+                    <button class="btn cifrar">Cifrar</button>
+                    <button class="btn decifrar">Decifrar</button>
+                </div>
+                <div class="advertencia">
+                    <i class="fa-solid fa-circle-exclamation"></i><p>Solo letras minúsculas y sin acentos</p>
+                </div>
+            </div>
+        </section>
+        <section class="salida-container">
+            <textarea id="txt-salida" cols="10" rows="30" class="txt-salida hidden"></textarea>
+            <div class="salida">
+                <img src="./resources/images/imagen.svg"  class="salida-imagen">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees cifrar o decifrar.</p>
+            </div>
+            <button class="copiar">Copiar</button>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
